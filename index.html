@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+      <meta charset="UTF-8">
+      
+       <meta http-equiv ="X-UA-Compatible"content ="IE=edge">
+      
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        
+        <title>Projeto Starbuks</title>
+        
+       <link rel="stylesheet" href="styles.css"
+       
+      
+</head>
+<body> 
+      <div class="circulo"></div>
+       
+     
+            <img src="./logo.png" class="logo">
+            
+     
+      <div class="conteudo">  
+            
+           <div class="caixa-texto"> 
+                        
+           <h2>It`s not just Coffer It`s <span>Starbuks</span>
+           </h2>
+           
+           <p>Lorem ipsum dolor sit amet, consectetur  adipiscing 
+        elit. Donec lorem justo, sollicitudin vel ultricies sed, 
+        eleifend nec metus.</p>
+        
+        <button>Escolha seu Pedido</butto>
+         
+        </div>
+      
+      
+         <div class="caixa-imagem">
+               
+            <img src="./img1.png" alt="foto-do-copo-verde" class="starbuks">
+         </div>
+
+   </div>
+   
+   
+       <div class="menu">
+            <img src="./verde.png" class="botao-menu" onclick="trocaImagem('./img1.png'); trocaCor('#90ee90')">
+            <img src="./morango.png" class="botao-menu" onclick="trocaImagem('./img2.png'); trocaCor('#eb7495')" >
+            <img src="./rosa.png"  class="botao-menu" onclick="trocaImagem('./img3.png');  trocaCor('#d752b1')">
+      </div>
+      
+      
+</body>
+
+
+<script>
+      
+      let imagem = document.querySelector(".starbuks")
+      
+      let circulo = document.querySelector(".circulo")
+     
+      
+      
+      
+      function trocaImagem(endereco){
+      
+          imagem.src = endereco
+      }
+      
+      
+      function trocaCor(cor){
+          circulo.style.background = cor 
+      }
+      
+</script>
+
+
+
+
+  <!--   <script src="./scripts.js"></script> -->
+
+</html>

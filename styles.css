@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing:border-box;
+      font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+      padding-top:10px;   
+       padding-right: 50px;
+    padding-left: 50px;
+      
+       /* top cima
+        bottom  baixo
+        left esquerda 
+         right direita */
+    
+}
+
+.conteudo{
+      width: 100%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      
+}
+
+.caixa-texto{
+      width: 800px;
+      margin-right: 200px;
+  
+      
+}
+
+
+
+.caixa-imagem{
+      width: 800px;
+      display:flex;
+     justify-content:flex-end;
+      margin-top:200px; 
+}
+
+.menu{
+      display:flex;
+      justify-content: center;
+     
+}
+
+h2{
+      color: #333;
+      font-size:40px;
+      font-weight:400;
+      
+} 
+
+
+span{
+      font-size:70px;
+      font-weight:bold;
+       background: linear-gradient(
+           100deg, #ff4900, #0003ff
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
+}
+
+ 
+p{
+      font-size:20px;
+      color: #616161;
+      margin-top:15px;
+} 
+
+
+
+
+button{
+      background: linear-gradient(
+           90deg, #ff4900, #0003ff
+      );
+      color: #fff;
+      border-radius:50px;
+      border:none;
+      cursor:pointer;
+      padding: 10px;
+      margin-top: 20px;
+      cursor:pointer;
+      opacity:0.8;
+}
+ 
+
+
+.logo{
+      width: 150px;
+      transition: 1s;
+   
+}
+.logo:hover{
+      transform: translateX(300px);
+}
+ 
+
+.starbuks{
+      width: 250px;
+   
+      
+    
+      
+}
+ 
+ 
+.botao-menu{
+      width: 60px;
+      cursor:pointer;
+      margin: 20px;
+      transition: 1s;
+     
+}
+
+.botao-menu:hover{
+      transform: translateY(-60px);
+}
+ 
+
+
+
+.circulo {
+        position: absolute;
+      float: right;
+      width: 900px;
+      height: 900px;
+      top: 90px;
+      right: 0;
+      left:70px;
+      shape-outside: circle(150% at 150%);
+      clip-path: circle(40% at 80%);
+      background: linear-gradient(
+           200deg, #55ff82, #80ffc1
+      );
+      Z-index:-1;
+    }
+    
+media screen and
+(min-width: 600px) and 
+(orientation:landscape){
+      
+      body {
+            width: 600px;
+            height: 320px;
+      }
+      
+}
